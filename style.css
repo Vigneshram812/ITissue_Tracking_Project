@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea, select, button {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #28a745;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+.filter {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.filter label, .filter select {
+    margin-right: 10px;
+}
+
+#issuesList {
+    margin-top: 20px;
+}
+
+.issue {
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-left: 5px solid #007bff;
+}
+
+.issue h3 {
+    margin: 0 0 10px 0;
+    color: #007bff;
+}
+
+.issue p {
+    margin: 0 0 10px 0;
+}
+
+.issue select, .issue button {
+    margin-right: 5px;
+}
+
+.issue button.delete {
+    background-color: #dc3545;
+}
+
+.issue button.delete:hover {
+    background-color: #c82333;
+}
+
+.issue button.update {
+    background-color: #ffc107;
+}
+
+.issue button.update:hover {
+    background-color: #e0a800;
+}

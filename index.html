@@ -1,0 +1,41 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT Issue Tracking System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>IT Issue Tracking System</h1>
+        <form id="issueForm">
+            <input type="text" id="issueTitle" placeholder="Issue Title" required>
+            <textarea id="issueDescription" placeholder="Issue Description" required></textarea>
+            <select id="issuePriority" required>
+                <option value="Low">Low</option>
+                <option value="Medium">Medium</option>
+                <option value="High">High</option>
+            </select>
+            <button type="submit">Add Issue</button>
+        </form>
+        <div class="filter">
+            <label for="filterStatus">Filter by Status:</label>
+            <select id="filterStatus" onchange="fetchIssues()">
+                <option value="All">All</option>
+                <option value="Open">Open</option>
+                <option value="In Progress">In Progress</option>
+                <option value="Closed">Closed</option>
+            </select>
+            <label for="filterPriority">Filter by Priority:</label>
+            <select id="filterPriority" onchange="fetchIssues()">
+                <option value="All">All</option>
+                <option value="Low">Low</option>
+                <option value="Medium">Medium</option>
+                <option value="High">High</option>
+            </select>
+        </div>
+        <div id="issuesList"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
